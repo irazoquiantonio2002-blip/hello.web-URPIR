@@ -95,8 +95,8 @@
   if (marqueeInner) {
     const items = [
       'Paramédicos Certificados', 'Bomberos Capacitados', 'Traslados de Urgencia',
-      'Atención Prehospitalaria', 'Radio Operación 24/7', 'Respuesta Inmediata',
-      'Ciudad de México', 'Equipamiento de Alta Tecnología', '17 Años de Experiencia',
+      'Atención Prehospitalaria', 'Torre de Control Operativo', 'Respuesta Inmediata',
+      'Tultitlán, Estado de México', 'Equipamiento de Alta Tecnología', '17 Años de Experiencia',
       'Seguridad y Confianza'
     ];
     const full = [...items, ...items, ...items, ...items];
@@ -117,7 +117,7 @@
         return;
       }
 
-      const phone = '525522937489';
+      const phone = '525519644690';
       const text  = encodeURIComponent(
         `Hola URIPR Emergencias 🚑\n\nSoy *${name}*.\nNecesito: *${interest}*.\n\n${message}`
       );

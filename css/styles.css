@@ -629,6 +629,23 @@ button { font-family: inherit; }
 }
 
 /* ============================================================
+   SECTION: IDENTIDAD — Misión, Visión, Valores
+   ============================================================ */
+#identidad {
+  padding: 130px 0;
+  background: var(--bg);
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .mv-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
    SECTION: AMBIENTES
    ============================================================ */
 #ambientes {
@@ -702,6 +719,56 @@ button { font-family: inherit; }
 .amb-card h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
 .amb-card p  { font-size: 13.5px; color: rgba(255,255,255,0.65); line-height: 1.6; }
 .amb-temp    { font-size: 11px; font-weight: 700; color: var(--gold); margin-top: 12px; letter-spacing: 0.1em; }
+
+/* ============================================================
+   SECTION: CAPACITACIÓN
+   ============================================================ */
+#capacitacion {
+  padding: 130px 0;
+  background: var(--bg);
+}
+
+.cap-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .cap-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.cap-card {
+  position: relative; border-radius: var(--radius);
+  overflow: hidden; cursor: default;
+  aspect-ratio: 4/3;
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: border-color 0.4s ease, transform 0.45s var(--ease);
+}
+.cap-card:hover { border-color: var(--border-gold); transform: translateY(-5px); }
+
+.cap-featured { aspect-ratio: 16/9; }
+@media (min-width: 768px) {
+  .cap-featured { grid-column: 1 / -1; aspect-ratio: 21/8; }
+}
+
+.cap-img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.85s var(--ease), filter 0.5s ease;
+}
+.cap-card:hover .cap-img { transform: scale(1.07); filter: brightness(0.82); }
+
+.cap-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.32) 55%, transparent 100%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 22px 24px;
+}
+.cap-overlay h3 { font-size: 16px; font-weight: 800; margin-bottom: 6px; }
+.cap-overlay p  { font-size: 12.5px; color: rgba(255,255,255,0.7); line-height: 1.55; }
+.cap-featured .cap-overlay { padding: 30px 34px; }
+.cap-featured .cap-overlay h3 { font-size: 22px; margin-bottom: 8px; }
+.cap-featured .cap-overlay p  { font-size: 14px; max-width: 460px; }
 
 /* ============================================================
    SECTION: PROCESO
