@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URIPR Emergencias | Ambulancias y Paramédicos 24/7 en CDMX</title>
+  <meta name="description" content="URIPR Emergencias: Unidad de Respuesta Inmediata con paramédicos y bomberos certificados. Atención prehospitalaria, traslados de urgencia y programados las 24 horas en Ciudad de México. Llama al 55 2293 7489.">
+  <meta name="keywords" content="ambulancia CDMX, paramédicos, traslados de urgencia, atención prehospitalaria, bomberos, emergencias médicas, URIPR, unidad de respuesta inmediata">
+  <meta property="og:title" content="URIPR Emergencias | Respuesta Inmediata las 24 Horas">
+  <meta property="og:description" content="Paramédicos y bomberos certificados. Traslados de urgencia y programados, atención prehospitalaria y radio operación 24/7. 17 años salvando vidas.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Imagenes/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="Imagenes/logo.png" alt="URIPR" class="loader-logo">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="URIPR Emergencias — inicio">
+          <img src="Imagenes/logo.png" alt="URIPR" class="nav-logo-img">
+          <div class="nav-logo-copy">
+            <span>Emergencias</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#ambientes">Traslados</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Equipamiento</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="tel:5522937489" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          <i class="fa-solid fa-phone" style="font-size:12px;"></i>
+          Llamar Ahora
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nosotros</a>
+      <a href="#ambientes">Traslados</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Equipamiento</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="tel:5522937489">Llamar Ahora →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Paramédicos · Bomberos · Ciudad de México
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Cuando cada segundo</span></span>
+            <span class="line"><span>importa, estamos</span></span>
+            <span class="line"><span class="accent">contigo.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Somos <strong>URIPR Emergencias</strong>, Unidad de Respuesta Inmediata con <strong>17 años</strong> de experiencia. Paramédicos y bomberos certificados, atención prehospitalaria y traslados de urgencia las 24 horas, los 365 días del año.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="tel:5522937489" class="btn-gold">
+              Llamar Ahora — Emergencias
+              <i class="fa-solid fa-phone" style="font-size:12px;"></i>
+            </a>
+            <a href="#why" class="btn-outline">
+              <i class="fa-solid fa-truck-medical" style="font-size:15px; color:var(--gray);"></i>
+              Ver Servicios
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Personal certificado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-bolt"></i>
+              Respuesta inmediata 24/7
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Ciudad de México
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Servicios
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              La diferencia entre un buen y un mal desenlace…
+              <em> casi siempre es el tiempo de respuesta.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            En URIPR Emergencias combinamos personal certificado, tecnología de punta y protocolos probados para llegar a tiempo, cuando más se necesita.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-kit-medical"></i>
+            </div>
+            <h3>Atención Prehospitalaria</h3>
+            <p>Estabilizamos y atendemos al paciente desde el primer minuto, en el lugar de los hechos.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3>Traslados Programados y de Urgencia</h3>
+            <p>Desde citas médicas hasta emergencias críticas, coordinamos cada traslado con precisión.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>Paramédicos Altamente Capacitados</h3>
+            <p>Personal con formación continua en protocolos internacionales de atención de urgencias.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <h3>Radio Operación las 24 Horas</h3>
+            <p>Centro de radiocomunicación activo día y noche para una coordinación precisa entre unidades.</p>
+          </div>
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">05</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-briefcase-medical"></i>
+            </div>
+            <h3>Equipamiento de Alta Tecnología</h3>
+            <p>Unidades equipadas con instrumental de vanguardia para soporte básico y avanzado.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">06</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3>Seguridad, Confianza y Profesionalismo</h3>
+            <p>Protocolos estandarizados que garantizan la seguridad del paciente en cada servicio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         TRAYECTORIA — Fixed background banner
+    ══════════════════════════════════════════════════ -->
+    <section id="trayectoria" class="fixed-bg"
+      style="background-image:url('https://images.pexels.com/photos/5364345/pexels-photo-5364345.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920');"
+      aria-labelledby="trayectoria-heading">
+      <div class="container">
+        <div class="reveal">
+          <div class="label" style="justify-content:center;">Nuestra Trayectoria</div>
+          <h2 class="section-title" id="trayectoria-heading">
+            17 años protegiendo vidas<br>
+            en la <span class="gold">Ciudad de México</span>
+          </h2>
+          <p style="color:rgba(255,255,255,0.68); margin:20px auto 0; font-size:16px; max-width:520px; line-height:1.75;">
+            Una flota lista, personal certificado y un compromiso que no descansa, ni de día ni de noche.
+          </p>
+        </div>
+        <div class="trayectoria-chips reveal d2">
+          <div class="trayectoria-chip"><i class="fa-solid fa-calendar-days"></i> 17 años de experiencia</div>
+          <div class="trayectoria-chip"><i class="fa-solid fa-clock"></i> Disponibilidad 24/7</div>
+          <div class="trayectoria-chip"><i class="fa-solid fa-user-doctor"></i> Personal certificado</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Tipos de Traslado
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" class="fixed-bg"
+      style="background-image:url('https://images.pexels.com/photos/6520213/pexels-photo-6520213.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920');"
+      aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Tipos de Servicio</div>
+            <h2 class="section-title" id="amb-heading">
+              No todas las urgencias<br>
+              <span class="gold">requieren lo mismo</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Contamos con la unidad y el nivel de atención adecuados para cada situación.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál necesitas?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Urgencias Básicas -->
+          <div class="amb-card icon-card reveal">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(70,97,255,0.15); border-color:rgba(138,160,255,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-truck-medical" style="color:#8aa0ff;"></i>
+              </div>
+              <h3>Urgencias Básicas</h3>
+              <p>Atención inmediata y traslado en el lugar de los hechos para urgencias no críticas.</p>
+              <div class="amb-temp">Respuesta en minutos</div>
+            </div>
+          </div>
+
+          <!-- Terapia Intensiva -->
+          <div class="amb-card icon-card reveal d1">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(230,57,70,0.15); border-color:rgba(255,107,118,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-heart-pulse" style="color:#ff8f97;"></i>
+              </div>
+              <h3>Terapia Intensiva</h3>
+              <p>Unidades avanzadas con soporte vital completo para pacientes en estado crítico.</p>
+              <div class="amb-temp">Soporte vital avanzado</div>
+            </div>
+          </div>
+
+          <!-- Traslados Programados -->
+          <div class="amb-card icon-card reveal d2">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(70,97,255,0.12); border-color:rgba(138,160,255,0.35);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-calendar-check" style="color:#8aa0ff;"></i>
+              </div>
+              <h3>Traslados Programados</h3>
+              <p>Citas médicas, altas hospitalarias y traslados interhospitalarios con horario garantizado.</p>
+              <div class="amb-temp">Puntualidad garantizada</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo trabajamos
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, rápido y <span class="gold">profesional</span>
+          </h2>
+          <p>De la llamada al destino final, acompañamos cada paso del proceso para garantizar una respuesta segura y a tiempo.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Llamada de Emergencia</h3>
+            <p>Contáctanos por teléfono o WhatsApp. Un operador certificado atiende tu llamada las 24 horas.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Despacho Inmediato</h3>
+            <p>Activamos la unidad más cercana con personal paramédico y equipo de alta tecnología.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Traslado y Seguimiento</h3>
+            <p>Brindamos atención prehospitalaria en ruta y aseguramos la entrega segura en el centro médico.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         EQUIPAMIENTO
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Equipamiento Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Tecnología que gana segundos,<br>
+              <span class="gold">segundos que salvan vidas</span>
+            </h2>
+            <p class="producto-lead">
+              Cada unidad de URIPR Emergencias está equipada con instrumental de vanguardia y respaldada por un centro de radiocomunicación activo las 24 horas.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características del servicio">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-truck-medical"></i></div>
+                <div>
+                  <h4>Ambulancias Equipadas</h4>
+                  <p>Unidades con soporte básico e intensivo, listas para cualquier escenario.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-tower-broadcast"></i></div>
+                <div>
+                  <h4>Radio Operación 24 Horas</h4>
+                  <p>Comunicación constante entre unidad, base y hospital para una coordinación precisa.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></div>
+                <div>
+                  <h4>Personal Certificado</h4>
+                  <p>Paramédicos y bomberos con capacitación continua en protocolos internacionales.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-shield-heart"></i></div>
+                <div>
+                  <h4>Seguridad y Protocolo</h4>
+                  <p>Procesos estandarizados que garantizan la seguridad del paciente en cada traslado.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Datos clave del servicio">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">17 años</span>
+                <span class="spec-name">Experiencia</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">24/7</span>
+                <span class="spec-name">Disponibilidad</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">100%</span>
+                <span class="spec-name">Certificado</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">CDMX</span>
+                <span class="spec-name">Cobertura</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual: real equipment photo -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <img class="producto-photo"
+                   src="Imagenes/504974094_1343978631067898_3620815563350819092_n.jpg"
+                   alt="Equipo de simulación médica y tecnología de capacitación de URIPR Emergencias">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Capacitación de alto nivel
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-bolt" style="color:var(--gold);"></i>
+                Tecnología avanzada
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA — Carrusel
+    ══════════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="galeria-heading">
+      <div class="container">
+
+        <div class="galeria-hdr reveal">
+          <div class="label" style="justify-content:center;">Galería</div>
+          <h2 class="section-title" id="galeria-heading">
+            Nuestra unidad <span class="gold">en acción</span>
+          </h2>
+          <p>Un vistazo a nuestro equipo, unidades y capacitación constante.</p>
+        </div>
+
+        <div class="carousel reveal d2" id="carousel" aria-roledescription="carrusel" aria-label="Galería de fotos de URIPR Emergencias">
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="carousel-slide">
+              <img src="Imagenes/500761531_1334377518694676_2326687608381493628_n.jpg"
+                   alt="Ambulancias URIPR listas en base de operaciones">
+              <div class="carousel-caption">
+                <h3>Flota Lista 24/7</h3>
+                <p>Unidades equipadas y personal listo para salir en minutos, cualquier día del año.</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="Imagenes/504974094_1343978631067898_3620815563350819092_n.jpg"
+                   alt="Capacitación con tecnología avanzada del equipo URIPR">
+              <div class="carousel-caption">
+                <h3>Capacitación Constante</h3>
+                <p>Entrenamos con tecnología de punta para responder con precisión ante cualquier escenario.</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.pexels.com/photos/6519935/pexels-photo-6519935.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                   alt="Paramédicos cargando una camilla en la ambulancia">
+              <div class="carousel-caption">
+                <h3>Respuesta Coordinada</h3>
+                <p>Cada segundo cuenta: nuestro equipo actúa con protocolo y precisión en cada traslado.</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.pexels.com/photos/6520105/pexels-photo-6520105.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                   alt="Ambulancia estacionada lista para salir a servicio">
+              <div class="carousel-caption">
+                <h3>Presencia en Toda la Ciudad</h3>
+                <p>Cobertura en Ciudad de México y su zona metropolitana, siempre cerca de ti.</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.pexels.com/photos/6519887/pexels-photo-6519887.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                   alt="Paramédico certificado listo junto a la ambulancia">
+              <div class="carousel-caption">
+                <h3>Personal Certificado</h3>
+                <p>Paramédicos y bomberos con formación continua en protocolos internacionales.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-arrow prev" id="carouselPrev" aria-label="Foto anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carousel-arrow next" id="carouselNext" aria-label="Foto siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Estadísticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="17" data-suffix=" años"
+                 aria-label="17 años">0</div>
+            <div class="stat-lbl">Trayectoria y<br>experiencia</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="24" data-suffix="/7"
+                 aria-label="24 horas, 7 días">0</div>
+            <div class="stat-lbl">Respuesta<br>inmediata</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100%">0</div>
+            <div class="stat-lbl">Personal<br>certificado</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="6" data-suffix=""
+                 aria-label="6 servicios">0</div>
+            <div class="stat-lbl">Servicios<br>especializados</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Cobertura</div>
+          <h2 class="section-title" id="sec-heading">
+            Listos para <span class="gold">cada situación</span>
+          </h2>
+          <p>Desde el hogar hasta grandes eventos, tenemos la unidad adecuada para cada contexto.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Hogares</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-building sector-icon" aria-hidden="true"></i>
+            <h3>Empresas</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-people-group sector-icon" aria-hidden="true"></i>
+            <h3>Eventos Masivos</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-school sector-icon" aria-hidden="true"></i>
+            <h3>Escuelas</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-hospital sector-icon" aria-hidden="true"></i>
+            <h3>Hospitales</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CTA EMERGENCIA — Fixed background banner
+    ══════════════════════════════════════════════════ -->
+    <section id="cta-emergencia" class="fixed-bg"
+      style="background-image:url('https://images.pexels.com/photos/8942627/pexels-photo-8942627.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920');"
+      aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="reveal">
+          <div class="label" style="justify-content:center;">Emergencia</div>
+          <h2 class="cta-title" id="cta-heading">¿Necesitas ayuda ahora mismo?</h2>
+          <p class="cta-sub">No esperes. Nuestro equipo está listo para salir en minutos, las 24 horas del día.</p>
+          <div class="cta-actions">
+            <a href="tel:5522937489" class="btn-gold">
+              Llamar Ahora — 55 2293 7489
+              <i class="fa-solid fa-phone" style="font-size:12px;"></i>
+            </a>
+            <a href="https://wa.me/525522937489" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <i class="fa-brands fa-whatsapp" style="font-size:16px; color:var(--green-wa);"></i>
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu emergencia</span>
+          </h2>
+          <p>Solicita tu unidad ahora. Te respondemos de inmediato.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">Respuesta inmediata, las 24 horas, los 365 días del año.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Cobertura</h4>
+                  <p>Ciudad de México<br>
+                     y Zona Metropolitana.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:5522937489">55 2293 7489</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y te atendemos en minutos.</p>
+                  <a href="https://wa.me/525522937489" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Servicio</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Traslado de urgencia</option>
+                    <option>Atención prehospitalaria</option>
+                    <option>Traslado programado</option>
+                    <option>Cobertura de evento</option>
+                    <option>Información general</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle de la situación</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe la ubicación, el estado del paciente o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="Imagenes/logo.png" alt="URIPR" class="footer-logo-img">
+          <span>URIPR Emergencias</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> URIPR Emergencias — Unidad de Respuesta Inmediata Planeta Rojo. Todos los derechos reservados. Ciudad de México.
+        </p>
+        <div class="footer-socials">
+          <a href="tel:5522937489"
+             class="footer-soc" aria-label="Llamar">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="https://wa.me/525522937489" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/525522937489?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20ambulancia."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
