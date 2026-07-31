@@ -117,7 +117,7 @@
         return;
       }
 
-      const phone = '525519644690';
+      const phone = '525522937489';
       const text  = encodeURIComponent(
         `Hola URIPR Emergencias 🚑\n\nSoy *${name}*.\nNecesito: *${interest}*.\n\n${message}`
       );
